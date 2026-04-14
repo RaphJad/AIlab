@@ -14,4 +14,6 @@ ENV PATH="/root/.local/bin:$PATH"
 WORKDIR /app
 COPY . .
 
+RUN pip install numpy matplotlib torch torchvision torchaudio
+
 RUN poetry config virtualenvs.create false
