@@ -37,6 +37,7 @@
                 "ms-python.vscode-pylance",
                 "ms-toolsai.jupyter",
                 "njpwerner.autodocstring",
+                "anthropic.claude-code"
             ]
         }
     }
