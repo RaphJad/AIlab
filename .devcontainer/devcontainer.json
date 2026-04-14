@@ -1,0 +1,43 @@
+{
+    "build": {
+        "dockerfile": "../DockerFile",
+        "context": "",
+        "target": "base"
+    },
+    "workspaceFolder": "/app",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.defaultFormatter": "charliermarsh.ruff",
+                "editor.formatOnSave": false,
+                "editor.codeActionsOnSave": {
+                    "source.fixAll": false
+                },
+                "files.autoSave": "onFocusChange",
+                "editor.rulers": [
+                    88
+                ],
+                "editor.tabSize": 4,
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "terminal.integrated.profiles.linux": {
+                    "bash": {
+                        "path": "bash"
+                    }
+                }
+            },
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "tamasfe.even-better-toml",
+                "redhat.vscode-yaml",
+                "mechatroner.rainbow-csv",
+                "DavidAnson.vscode-markdownlint",
+                "MS-vsliveshare.vsliveshare",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter",
+                "njpwerner.autodocstring",
+            ]
+        }
+    }
+}
